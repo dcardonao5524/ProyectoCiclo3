@@ -15,6 +15,7 @@ function App() {
           <LandingPage/>
         </Route>
       </Switch>
+      <p>Test</p>
     </Router>
   );
 }
