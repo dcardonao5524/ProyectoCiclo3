@@ -21,7 +21,7 @@ function LoginPage() {
 
                                 <form action="index.html" />
                                 <img src={img2} alt="img2" />
-                                <h2 class="title">Welcome Rocky Mountain Bikes</h2>
+                                <h2 class="title">Welcome to Rocky Mountain Bikes</h2>
                                 <div class="input-div focus">
                                     <div class="i">
                                         <i class="user"></i>
