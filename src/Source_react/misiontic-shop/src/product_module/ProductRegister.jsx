@@ -56,8 +56,6 @@ function ProductRegister() {
       console.log(jsonResponse);
     };
 
-
-
     const [products, setProducts] = useState([]);
 
     const numbers = [1,2,3,4,5];
