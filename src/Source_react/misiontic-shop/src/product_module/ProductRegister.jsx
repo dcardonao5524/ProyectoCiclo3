@@ -125,12 +125,12 @@ function ProductRegister() {
                             <input type="text" id="fabricante" class="form-control" placeholder="Fabricante" onChange={(e) => setFabricante(e.target.value)}/>
                          </div>
                         <div className="col">
-                            <input type="text" id="precio" class="form-control" placeholder="Precio" onChange={(e) => setPrecio(e.target.value)}/>  
+                            <input type="number" id="precio" class="form-control" placeholder="Precio" onChange={(e) => setPrecio(e.target.value)}/>  
                         </div>    
                     </div>
                     <div className="row">
                         <div className="col">
-                            <input type="text" id="cantidad" class="form-control" placeholder="Cantidad" onChange={(e) => setCantidad(e.target.value)}/>
+                            <input type="number" id="cantidad" class="form-control" placeholder="Cantidad" onChange={(e) => setCantidad(e.target.value)}/>
                         </div>
                         <div className="col">
                             <input type="text" id="fecha" class="form-control" placeholder="Fecha" onChange={(e) => setFecha(e.target.value)}/>
