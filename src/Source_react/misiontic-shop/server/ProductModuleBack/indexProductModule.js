@@ -46,8 +46,16 @@ app.put("/update-product", (req,res) => {
 })
 
 //Borrar
-app.delete("/delete-product", (req,res) => {
+app.delete("/delete-product", async (req,res) => {
     const product = req.body;
+    const id = product.id;
+    const nombre_producto = product.nombre_producto;
+    const tipo_producto = product.tipo_producto;
+    const fabricante = product.fabricante;
+    const precio = product.precio;
+    const cantidad = product.cantidad;
+    const fecha = product.fecha;
+    await connection.execute(`DELETE FROM registro_productos WHERE id = ${id}`)
     console.log(product.name)
     res.json(product);
 })

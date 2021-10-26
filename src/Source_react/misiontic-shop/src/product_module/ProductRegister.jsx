@@ -94,7 +94,7 @@ function ProductRegister() {
             <td>{product.cantidad}</td>
             <td>{product.fecha}</td>
             <td><i class="bi bi-pencil-square btnedit" onClick={() => updateProduct(product)}></i></td>
-            <td><i class="bi bi-trash-fill btndelete"></i></td>
+            <td><i class="bi bi-trash-fill btndelete" ></i></td>
           </tr>
         );
         setProducts(listProducts)
@@ -145,7 +145,7 @@ function ProductRegister() {
                 <button class="btn btn-success bg-dark" id="btnagregar" onClick={addProduct}>Agregar</button>
                 <button class="btn btn-success bg-dark" id="btnbuscar">Buscar</button>
                 <button class="btn btn-success bg-dark" id="btnactualizar">Actualizar</button>
-                <button class="btn btn-success bg-dark" id="btnborrar">Eliminar Todo</button>
+                <button class="btn btn-success bg-dark" id="btnborrar" onClick={deleteProduct}>Eliminar</button>
             </div>
           </div>  
           <div className="container d-flex table-responsive-sm fondo2">
